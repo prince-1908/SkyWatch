@@ -1,0 +1,148 @@
+/* ===== NAV ===== */
+
+nav{
+    height: 12vh;
+}
+
+nav ul{
+    flex-direction: column;
+}
+
+nav ul div{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-list-item{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.nav-list-item:active{
+    /* when we click on the list item then */
+    background-color: rgba(53, 96, 113, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.nav-list-item:hover{
+    border-bottom: none;
+}
+
+.nav-list-item a{
+    font-size: 4vw;
+}
+
+#navLogo{
+    font-size: 7vw;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+#nav-menu{
+    position: fixed;
+    top: -50vh;
+    flex-direction: column;
+    /* nav bg color */
+    background-color: rgba(0, 94, 255, 0.9);
+    backdrop-filter: blur(50px);
+    width: 100%;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+    height: 40vh;
+}
+
+.nav-list-item{
+    margin: 16px 0;
+}
+
+#nav-menu.active{
+    top: 12vh;
+}
+
+#dropdown{
+    display: none;
+}
+
+
+
+
+
+/*===== HAMBURGER =====*/
+
+#hamburger{
+    display: block;
+    position: absolute;
+    right: 2vw;
+}
+
+#hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+#hamburger.active .bar:nth-child(1){
+    transform: translateY(13.75px) rotate(45deg);
+}
+
+#hamburger.active .bar:nth-child(3){
+    transform: translateY(-13.75px) rotate(-45deg)
+}
+
+
+
+
+
+/* ===== SEARCH ===== */
+
+#search{
+    top: 15vh;
+}
+
+
+
+
+
+/* ===== WEATHER ===== */
+
+#weather-main{
+    flex-direction: column;
+    margin: 15px auto;
+}
+
+#weather-heading{
+    width: 80%;
+}
+
+#weather-heading h1{
+    font-size: 7vw;
+}
+
+#weather-heading p{
+    font-size: 2.5vw;
+}
+
+.card{
+    height: 30vh;
+    font-size: 3vw;
+    width: 60vw;
+}
+
+
+
+
+
+/* ===== MORE ===== */
+
+#more-heading {
+    width: 90%;
+}
+
+#more h1{
+    font-size: 7vw;
+}
+
+#table-container table,
+th,
+td{
+    font-size: 3vw;
+}

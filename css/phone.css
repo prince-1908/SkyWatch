@@ -1,0 +1,100 @@
+/* ===== NAV ===== */
+.nav-list-item a{
+    font-size: 8vw;
+}
+
+#navLogo{
+    font-size: 10vw;
+}
+
+#nav-menu{
+    top: -100vh;
+    height: 73vh;
+}
+
+#nav-menu.active{
+    top: 6rem;
+}
+
+
+
+
+
+/* ===== HAMBURGER ===== */
+
+#hamburger{
+    display: block;
+    position: absolute;
+    right: 4vw;
+}
+
+#hamburger .bar{
+    height: 5px;
+    width: 30px;
+    margin: 5px auto;
+}
+
+#hamburger.active .bar:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+}
+
+#hamburger.active .bar:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg)
+}
+
+
+
+
+
+/* ===== SEARCH ===== */
+#search{
+    gap: 0;
+}
+
+#search-input{
+    padding: 8px 16px;
+}
+
+
+
+
+
+/* ===== WEATHER ===== */
+
+#weather{
+    top: 12rem;
+}
+
+#weather-heading h1{
+    font-size: 12vw;
+}
+
+#weather-heading p{
+    font-size: 5vw;
+}
+
+.card{
+    height: 50vh;
+    font-size: 6vw;
+    width: 80vw;
+}
+
+
+
+
+
+/* ===== MORE ===== */
+
+#more h1{
+    font-size: 12vw;
+}
+
+#table-container{
+    overflow-x: auto;
+}
+
+#table-container table,
+th,
+td{
+    font-size: 6vw;
+}

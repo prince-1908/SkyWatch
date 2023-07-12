@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" media="(max-width: 1024px)" href="/css/ipad.css" />
+  <link rel="stylesheet" media="(max-width: 500px)" href="/css/phone.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+  <title>SkyWatch</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <div>
+        <li id="navLogo">
+          <h1>SkyWatch</h1>
+        </li>
+      </div>
+      <div id="nav-menu">
+        <li class="nav-list-item"><a href="/html/index.html">Home</a></li>
+        <li class="nav-list-item" id="dropdown">
+          <a href="#weather-land">Weather</a>
+          <ul>
+            <li class="dropdown-list"><a href="#search-button-div">Weahter</a></li>
+            <li class="dropdown-list"><a href="#more">Common Places</a></li>
+          </ul>
+        </li>
+        <li class="nav-list-item"><a href="/html/about.html">About</a></li>
+        <li class="nav-list-item"><a href="#">How to Use</a></li>
+
+    </ul>
+    <div id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <section id="search">
+    <div id="search-input-div">
+      <input type="text" name="search-input" id="search-input" placeholder="Search.....">
+    </div>
+
+    <div id="search-button-div">
+      <button id="search-button">
+        <img src="/icons/icons8-search-50.png" alt="search">
+      </button>
+    </div>
+  </section>
+
+  <div id="weather-land"></div>
+
+  
+    <section id="weather">
+      <section id="weather-heading">
+        <h1 id="weather-h">WEATHER</h1>
+        <p>
+          Enter a City Name to Explore Current Conditions, Forecasts, and More!
+        </p>
+      </section>
+
+      <div id="empty-container">
+        <div id="empty-message"><h1>Discover Weather: Search City!</h1></div>
+      </div>
+
+      <main id="weather-main">
+        <div class="card">
+          <h1>Wind Speed : <span id="wind_speed"></span>m/s</h1>
+          <h1>Wind Direction : <span id="wind_degrees"></span></h1>
+        </div>
+
+        <div class="card">
+          <h1>Temperature : <span id="temp"></span>&#8451;</h1>
+          <h1>Feels Like : <span id="feels_like"></span>&#8451;</h1>
+        </div>
+
+        <div class="card">
+          <h1>Cloud Percentage : <span id="cloud_pct"></span>%</h1>
+          <h1>Humidity : <span id="humidity"></span>%</h1>
+        </div>
+      </main>
+
+  <div id="spacer"></div>
+
+  <div id="more">
+    <div id="more-heading">
+      <h1>Some Other Common Places</h1>
+    </div>
+    <div id="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Cloud %</th>
+            <th>Feels like</th>
+            <th>Humidity</th>
+            <th>Temp</th>
+            <th>Wind Direction</th>
+            <th>Wind speed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Argentina</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th scope="row">Egypt</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row">Canada</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th scope="row">Japan</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th scope="row">Nigeria</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </section>
+
+  <script src="/javascript/script.js"></script>
+  <script src="/javascript/hamburger.js"></script>
+  <script src="/javascript/hidesearch.js"></script>
+  <script src="/javascript/otherCities.js"></script>
+</body>
+
+</html>
