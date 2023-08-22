@@ -22,7 +22,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(135, 207, 235, 0.1);
+    background-color: rgba(135, 207, 235);
     backdrop-filter: blur(1px);
     position: fixed;
     transition: all 500ms ease-in-out;
@@ -30,7 +30,6 @@ nav {
 }
 
 nav:hover {
-    background-color: rgba(135, 207, 235, 0.1);
     backdrop-filter: blur(50px);
     box-shadow: 0 1px 100px grey;
 }
