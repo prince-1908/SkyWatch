@@ -105,6 +105,11 @@ nav ul li {
     font-size: 2vw;
 }
 
+#navLogo a{
+    text-decoration: none;
+    color: black;
+}
+
 #nav-menu {
     margin-right: 4vw;
 }
@@ -222,15 +227,12 @@ nav ul li {
 #empty-message {
     border: 2px solid black;
     border-radius: 23px;
-    height: 30vh;
+    /* height: 30vh; */
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(20px);
-}
-
-#empty-message h1 {
-    font-size: 4vw;
 }
 
 

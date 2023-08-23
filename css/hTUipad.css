@@ -1,4 +1,3 @@
-/* ===== NAV ===== */
 
 nav{
     height: 12vh;
@@ -45,11 +44,13 @@ nav ul div{
     flex-direction: column;
     /* nav bg color */
     background-color: rgba(0, 94, 255, 0.9);
+    overflow: visible;
     backdrop-filter: blur(50px);
     width: 100%;
     text-align: center;
     transition: all 500ms ease-in-out;
     height: 40vh;
+
 }
 
 .nav-list-item{
@@ -76,6 +77,10 @@ nav ul div{
     right: 2vw;
 }
 
+#hamburger .bar{
+    display: block;
+}
+
 #hamburger.active .bar:nth-child(2){
     opacity: 0;
 }
@@ -86,75 +91,4 @@ nav ul div{
 
 #hamburger.active .bar:nth-child(3){
     transform: translateY(-13.75px) rotate(-45deg)
-}
-
-
-
-
-
-/* ===== SEARCH ===== */
-
-#search{
-    top: 15vh;
-}
-
-
-/* ===== empty container ===== */
-#empty-container {
-    padding: 1rem;
-}
-
-#empty-message {
-    border: 2px solid black;
-    border-radius: 23px;
-    /* height: 10vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(20px);
-}
-
-/* ===== WEATHER ===== */
-
-#weather-main{
-    flex-direction: column;
-    margin: 15px auto;
-}
-
-#weather-heading{
-    width: 80%;
-}
-
-#weather-heading h1{
-    font-size: 7vw;
-}
-
-#weather-heading p{
-    font-size: 2.5vw;
-}
-
-.card{
-    height: 30vh;
-    font-size: 3vw;
-    width: 60vw;
-}
-
-
-
-
-
-/* ===== MORE ===== */
-
-#more-heading {
-    width: 90%;
-}
-
-#more h1{
-    font-size: 7vw;
-}
-
-#table-container table,
-th,
-td{
-    font-size: 3vw;
 }

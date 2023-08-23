@@ -82,7 +82,7 @@ function weather(city) {
 			if (error) {
 				emptyContainer.style.display = "block";
 				weatherMain.style.display = "none";
-				emptyMessage.innerHTML = `<h1 style="font-size:2vw;">Error: Invalid name, please check the city name correctly</h1>`;
+				emptyMessage.innerHTML = `<h1>Error: Invalid name, please check the city name correctly</h1>`;
 			}
 		});
 }
@@ -95,7 +95,7 @@ searchBtn.addEventListener("click", (e) => {
 		weather(searchInput.value);
 	}
 	else {
-		emptyMessage.innerHTML = `<h1 style="font-size:3vw;">Search Box is Empty</h1>`;
+		emptyMessage.innerHTML = `<h1>Search Box is Empty</h1>`;
 	}
 });
 
