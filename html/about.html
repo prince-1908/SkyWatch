@@ -1,35 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
-      rel="stylesheet"
-    />
-    <title>About | SkyWatch</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" media="(max-width: 1024px)" href="/css/aboutIpad.css" />
+  <link rel="stylesheet" media="(max-width: 500px)" href="/css/aboutPhone.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+  <title>About | SkyWatch</title>
 </head>
+
 <body>
-    <nav>
-        <ul>
-          <div>
-            <li id="navLogo"><h1>SkyWatch</h1></li>
-          </div>
-          <div id="nav-menu">
-            <li class="nav-list-item"><a href="/html/index.html">Home</a></li>
-            <li class="nav-list-item"><a href="/html/about.html">About</a></li>
-            <li class="nav-list-item"><a href="#">How to Use</a></li>
-            
-        </ul>
-        <div id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
+  <nav id="navbar">
+    <ul>
+      <div>
+        <li id="navLogo">
+          <h1>SkyWatch</h1>
+        </li>
+      </div>
+      <div id="nav-menu">
+        <li class="nav-list-item"><a href="/html/index.html">Home</a></li>
+        <li class="nav-list-item" id="dropdown">
+          <a href="#weather-land">Weather</a>
+          <ul>
+            <li class="dropdown-list"><a href="#search-button-div">Weahter</a></li>
+            <li class="dropdown-list"><a href="#more">Random Places</a></li>
+          </ul>
+        </li>
+        <li class="nav-list-item"><a href="/html/about.html">About</a></li>
+        <li class="nav-list-item"><a href="#">How to Use</a></li>
+      </div>
+    </ul>
+    <div id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <section class="main">
+    <h1>
+      SkyWatch <br> Weather of Anywhere from Anywhere
+    </h1>
+
+    <p>
+      Welcome to SkyWatch, your ultimate destination for instant weather updates and forecasts, no matter where you are
+      or where you want to know about. Our mission is to bring you the power to effortlessly access weather information
+      from around the globe, providing you with the tools to make informed decisions and stay prepared for any weather
+      condition.
+    </p>
+
+    <div class="section">
+      <h2>
+        Our Vision
+      </h2>
+
+      <p>
+        SkyWatch believes that knowing the weather should be as easy as looking up at the sky. Our vision is to create a
+        seamless experience that connects people to the weather in a way that's intuitive, efficient, and engaging.
+        We're here to empower you with accurate and up-to-date weather data, making it possible for you to plan your
+        days, travel, events, and activities with confidence.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>
+        Key Features
+      </h2>
+
+      <p>
+        <b>Instant Weather Access</b>: SkyWatch allows you to discover the weather conditions of any location on Earth,
+        right at your fingertips. Whether you're curious about the weather in your hometown or preparing for an upcoming
+        journey, we've got you covered.
+      </p>
+
+      <p>
+        <b>Global Coverage</b>: Our reach is limitless. From the bustling streets of New York City to the serene
+        landscapes of the Maldives, you can access weather data for any city or remote village around the world.
+      </p>
+
+      <p>
+        <b>Automated Random City Weather</b>: Experience the world through weather. SkyWatch adds a touch of serendipity
+        by displaying the weather of five random cities across the globe. It's a virtual journey that keeps you
+        connected to the vast tapestry of weather experiences worldwide.
+      </p>
+
+      <p>
+        <b>User-Friendly Interface</b>: We understand that simplicity is key. Our user-friendly interface is designed to
+        provide you with the weather information you need, presented in a clear and comprehensible manner. No complex
+        jargon, just the weather details that matter to you.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>
+        Why Choose SkyWatch?
+      </h2>
+
+      <p>
+        <b>Easy and Handy</b>: SkyWatch eliminates the hassle of navigating through multiple websites or apps to get
+        weather updates. With our platform, weather information is just a click away, making your experience easy and
+        convenient.
+      </p>
+
+      <p>
+        <b>Comprehensive Insights</b>: Whether it's temperature, humidity, wind direction, or wind speed, SkyWatch
+        delivers a comprehensive overview of weather conditions. We ensure you have all the data you need to plan your
+        day effectively.
+      </p>
+
+      <p>
+        <b>Reliability</b>: Our commitment to accuracy is unwavering. You can trust SkyWatch to provide you with
+        reliable weather forecasts so that you can make decisions with confidence.
+      </p>
+
+      <p>
+        <b>Accessible Anywhere</b>: SkyWatch is accessible across all devices. Whether you're using a smartphone,
+        tablet, or computer, you can stay connected to the latest weather updates from anywhere in the world.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>
+        Join the SkyWatch Community
+      </h2>
+
+      <p>
+        Become a part of our global community of weather enthusiasts. With SkyWatch, you're not just accessing weather
+        information; you're connecting with fellow users who share your curiosity and passion for the world's
+        atmospheric wonders.
+      </p>
+
+      <p>
+        Thank you for choosing SkyWatch as your weather companion. We're here to simplify your weather experience and
+        bring the world's weather to your fingertips. Explore, plan, and stay informed with SkyWatch!
+      </p>
+    </div>
+  </section>
+
+
+  <section class="spacer"></section>
+
+  <script src="/javascript/hamburger.js"></script>
 </body>
+
 </html>
