@@ -33,7 +33,6 @@ const cities = [
     "Vadodara",
     "Madurai",
     "Visakhapatnam",
-    "Allahabad",
     "Ranchi",
     "Thiruvananthapuram",
     "Bhubaneswar",
@@ -56,7 +55,86 @@ const cities = [
     "Jalandhar",
     "Bhiwandi",
     "Saharanpur",
-    "Gorakhpur"
+    "Gorakhpur",
+    "Warangal",
+    "Nellore",
+    "Aurangabad",
+    "Solapur",
+    "Tiruppur",
+    "Jhansi",
+    "Siliguri",
+    "Belgaum",
+    "Nanded",
+    "Durgapur",
+    "Ajmer",
+    "Kolhapur",
+    "Gulbarga",
+    "Jamnagar",
+    "Ujjain",
+    "Loni",
+    "Siliguri",
+    "Jammu",
+    "Sangli",
+    "Mirzapur",
+    "Faridabad",
+    "Nashik",
+    "Howrah",
+    "Kurnool",
+    "Rajahmundry",
+    "Bellary",
+    "Patna",
+    "Gopalpur",
+    "Bhagalpur",
+    "Dhar",
+    "Mandsaur",
+    "Ratlam",
+    "New York City",
+    "Tokyo",
+    "London",
+    "Paris",
+    "Singapore",
+    "Hong Kong",
+    "Dubai",
+    "Los Angeles",
+    "Sydney",
+    "Shanghai",
+    "Beijing",
+    "Chicago",
+    "Toronto",
+    "Seoul",
+    "San Francisco",
+    "Amsterdam",
+    "Munich",
+    "Moscow",
+    "Istanbul",
+    "Rio de Janeiro",
+    "Buenos Aires",
+    "Vancouver",
+    "Rome",
+    "Bangkok",
+    "Barcelona",
+    "Cairo",
+    "Kuala Lumpur",
+    "Johannesburg",
+    "São Paulo",
+    "Mexico City",
+    "San Diego",
+    "Miami",
+    "Houston",
+    "Copenhagen",
+    "Dublin",
+    "Seattle",
+    "Abu Dhabi",
+    "Oslo",
+    "Warsaw",
+    "Montreal",
+    "Stockholm",
+    "Taipei",
+    "Helsinki",
+    "Prague",
+    "Vienna",
+    "Brisbane",
+    "Zurich"
 ];
 
 let randomCities = [];
@@ -84,15 +162,15 @@ for (let i = 0; i < randomCities.length; i++) {
                 if (wd >= 22.5 && wd <= 67.5) {
                     cityWindDir[i].innerHTML = "North-East";
                 }
-            
+
                 else if (wd >= 67.5 && wd <= 112.5) {
                     cityWindDir[i].innerHTML = "East";
                 }
-            
+
                 else if (wd >= 112.5 && wd <= 157.5) {
                     cityWindDir[i].innerHTML = "South-East";
                 }
-            
+
                 else if (wd >= 157.5 && wd <= 202.5) {
                     cityWindDir[i].innerHTML = "South";
                 }
@@ -105,7 +183,7 @@ for (let i = 0; i < randomCities.length; i++) {
                 else if (wd >= 292.5 && wd <= 337.5) {
                     cityWindDir[i].innerHTML = "North-West";
                 }
-            
+
                 else if ((wd >= 337.5 && wd <= 360) || (wd >= 0 && wd <= 22.5)) {
                     cityWindDir[i].innerHTML = "North";
                 }
