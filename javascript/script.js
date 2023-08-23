@@ -12,6 +12,7 @@ let searchInput = document.getElementById("search-input");
 
 let weatherMain = document.getElementById("weather-main");
 let emptyContainer = document.getElementById("empty-container");
+let emptyMessage = document.getElementById("empty-message");
 // weather API
 
 
@@ -55,10 +56,14 @@ function weather(city) {
 		}
 	}
 
-	try {
-		fetch(`https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${city}`, options)
-		.then(response => response.json())
-		.then((response) => {
+	fetch(`https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${city}`, options)
+		.then(response => {
+			if (!response.ok) {
+				throw new Error();
+			}
+			return response.json();
+		}
+		).then((response) => {
 
 			// console.log(response)
 
@@ -74,48 +79,37 @@ function weather(city) {
 
 
 		}).catch((error) => {
-			console.log(error);
-			console.log("error ho gaya")
+			if (error) {
+				emptyContainer.style.display = "block";
+				weatherMain.style.display = "none";
+				emptyMessage.innerHTML = `<h1 style="font-size:2vw;">Error: Invalid name, please check the city name correctly</h1>`;
+			}
 		});
-		
-	} catch (error) {
-		console.log("error ho gaya");
-	}
-	// fetch(`https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${city}`, options)
-	// 	.then(response => response.json())
-	// 	.then((response) => {
-
-	// 		// console.log(response)
-
-	// 		let cityName = city.toUpperCase();
-	// 		weatherH.innerHTML = cityName;
-
-	// 		cloud_pct.innerHTML = response.cloud_pct
-	// 		temp.innerHTML = response.temp
-	// 		feels_like.innerHTML = response.feels_like
-	// 		humidity.innerHTML = response.humidity
-	// 		wind_speed.innerHTML = response.wind_speed
-	// 		windDir(response.wind_degrees);
-
-
-	// 	}).catch((error) => {
-	// 		console.log(error);
-	// 		console.log("error ho gaya")
-	// 	});
 }
 
 searchBtn.addEventListener("click", (e) => {
 	e.preventDefault();
-	if (searchInput.value!="") {
+	if (searchInput.value != "") {
 		emptyContainer.style.display = "none";
 		weatherMain.style.display = "flex";
 		weather(searchInput.value);
 	}
-	else{
-		console.log("empty container");
-		emptyContainer.firstElementChild.firstElementChild.innerHTML = "Search Field is empty, Please enter a city name.";
-		weatherH.nextElementSibling.innerHTML = "The search field appears to be empty. In order to proceed, kindly provide a valid city name for the search.";
+	else {
+		emptyMessage.innerHTML = `<h1 style="font-size:3vw;">Search Box is Empty</h1>`;
 	}
 });
 
-console.log(weatherH.nextElementSibling.innerHTML);
+
+searchInput.addEventListener("keypress", function (e) {
+	if (e.key === "Enter") {
+		e.preventDefault();
+		if (searchInput.value != "") {
+			emptyContainer.style.display = "none";
+			weatherMain.style.display = "flex";
+			weather(searchInput.value);
+		}
+		else {
+			emptyMessage.innerHTML = `<h1 style="font-size:3vw;">Search Box is Empty</h1>`;
+		}
+	}
+});

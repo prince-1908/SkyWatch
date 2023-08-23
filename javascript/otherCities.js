@@ -58,7 +58,6 @@ const cities = [
     "Saharanpur",
     "Gorakhpur"
 ];
-// console.log(cities);
 
 let randomCities = [];
 
@@ -69,7 +68,6 @@ while (randomCities.length < 5) {
         randomCities.push(randomCity);
     }
 }
-console.log(randomCities);
 
 for (let i = 0; i < randomCities.length; i++) {
     fetch(`https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${randomCities[i]}`, {
@@ -112,8 +110,6 @@ for (let i = 0; i < randomCities.length; i++) {
                     cityWindDir[i].innerHTML = "North";
                 }
             }
-
-            console.log(response)
             cityName[i].innerHTML = randomCities[i];
             cityCloudPct[i].innerHTML = response.cloud_pct + "%";
             cityTemp[i].innerHTML = response.temp + "&degC";
