@@ -58,6 +58,7 @@ searchInput.addEventListener("keypress", (e) => {
 
 Object.values(items).forEach(item => {
 	item.addEventListener('click', function(e){
+		console.log(item);
 		searchInput.value = item.innerHTML;
 	});
 });

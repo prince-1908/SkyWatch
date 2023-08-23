@@ -55,7 +55,9 @@
     padding: 8px 16px;
 }
 
-
+#recent-searches ul li{
+    font-size: 4vw;
+}
 
 
 

@@ -183,6 +183,7 @@ nav ul li {
     display: none;
     width: 100%;
     position: absolute;
+    z-index: 1000;
     top: 3.5rem;
 }
 
@@ -194,6 +195,7 @@ nav ul li {
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 2px;
     cursor: pointer;
+    font-size: 1.5vw;
 }
 
 #recent-searches ul li:hover{

@@ -98,6 +98,10 @@ nav ul div{
     top: 15vh;
 }
 
+#recent-searches ul li{
+    font-size: 2.5vw;
+}
+
 
 /* ===== empty container ===== */
 #empty-container {
