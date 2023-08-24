@@ -95,7 +95,7 @@ searchBtn.addEventListener("click", (e) => {
 		weather(searchInput.value);
 	}
 	else {
-		emptyMessage.innerHTML = `<h1>Search Box is Empty</h1>`;
+		emptyMessage.innerHTML = `<h1 style="font-size:3vw;>Search Box is Empty</h1>`;
 	}
 });
 
